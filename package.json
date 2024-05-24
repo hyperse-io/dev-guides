@@ -1,0 +1,53 @@
+{
+  "name": "dev-guides",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A collection of normal dev guides",
+  "keywords": [
+    "npm global",
+    "npm without sudo",
+    "dev guides"
+  ],
+  "homepage": "git@github.com:hyperse-io/dev-guides.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hyperse-io/dev-guides.git"
+  },
+  "author": {
+    "name": "Yingchun Tian",
+    "url": "https://github.com/hyperse-io/dev-guides"
+  },
+  "type": "module",
+  "files": [
+    "./templates/**/*",
+    "./dist/"
+  ],
+  "scripts": {
+    "cz": "cz",
+    "postinstall": "is-ci || yarn husky",
+    "lint-staged-files": "lint-staged --allow-empty"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@armit/eslint-config-bases": "^0.1.6",
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.3",
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@types/prettier": "3.0.0",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.x",
+    "husky": "9.0.11",
+    "is-ci": "3.0.1",
+    "lint-staged": "15.2.4",
+    "prettier": "3.2.5",
+    "shell-quote": "1.8.1",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "yarn@4.2.2"
+}
