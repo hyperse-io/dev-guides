@@ -25,6 +25,7 @@
   "scripts": {
     "cz": "cz",
     "postinstall": "is-ci || yarn husky",
+    "lint": "eslint .",
     "lint-staged-files": "lint-staged --allow-empty"
   },
   "config": {
@@ -33,20 +34,17 @@
     }
   },
   "devDependencies": {
-    "@armit/eslint-config-bases": "^0.1.6",
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.3",
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
-    "@types/prettier": "3.0.0",
+    "@hyperse/eslint-config-hyperse": "^1.0.9",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.x",
+    "eslint": "^9.5.0",
     "husky": "9.0.11",
     "is-ci": "3.0.1",
     "lint-staged": "15.2.4",
-    "prettier": "3.2.5",
-    "shell-quote": "1.8.1",
     "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.2.2"

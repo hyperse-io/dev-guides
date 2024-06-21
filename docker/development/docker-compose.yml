@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  next-trpc-demo-development:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: next-trpc-demo-development
+    ports:
+      - '3001:3000'

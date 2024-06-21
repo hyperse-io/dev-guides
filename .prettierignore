@@ -1,8 +1,0 @@
-.yarn
-**/.next/**
-**/dist/**
-**/build/**
-**/tmp/**
-**/migrations/**
-**/docs/**/*.ts
-graphql-admin-env.d.ts
