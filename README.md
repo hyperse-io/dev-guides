@@ -38,6 +38,9 @@
 - [Domain setup without prefix `www`](docs/domain-setup-without-www-prefix.md) _(Domain)_
 - [Domain setup with `/webapps` rules](docs/domain-setup-with-webapps-prefix-rule.md) _(Domain)_
 
+### Git
+- [Common git commands](docs/git-command.md) _(Git)_
+
 ## Contribute
 
 I'm happy to accept requests in the issue tracker, improvements to the content, and additional guides.
