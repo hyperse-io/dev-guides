@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "cz": "cz",
-    "postinstall": "is-ci || yarn husky",
+    "prepare": "yarn husky",
     "lint": "eslint .",
     "lint-staged-files": "lint-staged --allow-empty"
   },
