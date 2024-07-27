@@ -39,7 +39,12 @@
 - [Domain setup with `/webapps` rules](docs/domain-setup-with-webapps-prefix-rule.md) _(Domain)_
 
 ### Git
+
 - [Common git commands](docs/git-command.md) _(Git)_
+
+### Typings
+
+- [Ts Chainer Infer](docs/ts-chainer-infer.md) _(Ts)_
 
 ## Contribute
 
