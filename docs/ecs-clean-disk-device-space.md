@@ -3,6 +3,20 @@
 cd /opt-bash: cannot create temp file for here-document: No space left on device
 
 ```shell
+df -h
+```
+
+```text
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        7.7G     0  7.7G   0% /dev
+tmpfs           7.7G     0  7.7G   0% /dev/shm
+tmpfs           7.7G  520K  7.7G   1% /run
+tmpfs           7.7G     0  7.7G   0% /sys/fs/cgroup
+/dev/vda1        59G   46G   11G  81% /
+tmpfs           1.6G  4.0K  1.6G   1% /run/user/0
+```
+
+```shell
 du -sh /opt/applications/*
 ```
 
