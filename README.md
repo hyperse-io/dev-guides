@@ -27,7 +27,6 @@
 - [ECS enginx guides](docs/ecs-nginx-setup.md) _(Enginx)_
 - [ECS install tengine guides](docs/install-tengine-on-linux.md) _(Tengine)_
 - [Brew install nginx guides](docs/brew-install-nginx.md) _(Enginx)_
-- [Brew install nginx guides](docs/brew-install-nginx.md) _(Enginx)_
 - [ECS clean disk device space files](docs/ecs-clean-disk-device-space.md) _(ECS)_
 
 ### RDS
