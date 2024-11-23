@@ -4,15 +4,9 @@
 2. Run the resulting statement executed by 'sql' below, remove all the 'table' foreign key dependencies.
 
 ```sql
-SELECT CONCAT('ALTER TABLE ',TABLE_SCHEMA,'.',TABLE_NAME,' DROP FOREIGN KEY ',CONSTRAINT_NAME,' ;')
+SELECT CONCAT('ALTER TABLE ','`',TABLE_SCHEMA,'`','.`',TABLE_NAME,'` DROP FOREIGN KEY ',CONSTRAINT_NAME,' ;')
 	FROM information_schema.TABLE_CONSTRAINTS c
-		WHERE c.TABLE_SCHEMA='glass' AND c.CONSTRAINT_TYPE='FOREIGN KEY';
-```
-
-```sql
-SELECT CONCAT('ALTER TABLE ','`',TABLE_NAME,'`',' DROP FOREIGN KEY ',CONSTRAINT_NAME,' ;')
-	FROM information_schema.TABLE_CONSTRAINTS c
-		WHERE c.TABLE_SCHEMA='glass' AND c.CONSTRAINT_TYPE='FOREIGN KEY';
+		WHERE c.TABLE_SCHEMA='hyperse-main' AND c.CONSTRAINT_TYPE='FOREIGN KEY';
 ```
 
 3. RDS exports all data tables (data, excludes db structures) of the entire database. Execute the 'db_dump.sql' exported by RDS.
